@@ -15,7 +15,7 @@ public class Gerente extends Funcionario{ //gerente herda um funcionario
     }
 
     public double getBonificacao(){
-        return super.salario;
+        return super.getBonificacao() + super.getSalario();
     }
 
 }

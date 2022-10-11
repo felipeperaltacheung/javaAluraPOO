@@ -10,5 +10,6 @@ public class TestaFuncionario {
 		System.out.println(nico.getName());
 		System.out.println(nico.getBonificacao());
 
+
 	}
 }

@@ -3,7 +3,11 @@ package herdado;
 //gerente eh um funcionario e herda da classe funcionario e assina  o contrato autenticavel, eh um autenticavel
 public class Gerente extends Funcionario implements  Autenticavel{
 
-	private int senha;
+	private final AutenticacaoUtil autenticador;
+
+	public Gerente (){
+		this.autenticador = new AutenticacaoUtil();
+	}
 
 	public double getBonificacao() {
 		System.out.println("Chamando o método de bonificacao do GERENTE");
